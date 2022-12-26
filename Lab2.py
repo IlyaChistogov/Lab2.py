@@ -9,3 +9,7 @@ def write(data, filename):
         json.dump(data, file, indent=2)
 
 
+def read(filename):
+    with open(filename, 'r', encoding='utf-8') as file:
+        return json.load(file)
+
